@@ -24,8 +24,8 @@ $(document).ready(function () {
             scoreUser = 0;
             $('.user-score').html(scoreUser);
             $('.cpu-score').html(scorePc);
-            $('.seleccion-us').attr('src', '../img/interrogacion.svg');
-            $('.seleccion-pc').attr('src', '../img/interrogacion.svg');
+            $('.seleccion-us').attr('src', './img/interrogacion.svg');
+            $('.seleccion-pc').attr('src', './img/interrogacion.svg');
         }
 
 
@@ -94,30 +94,30 @@ $(document).ready(function () {
 
             switch (true) {
                 case (usuario == 1):
-                    $('.seleccion-us').attr('src', '../img/rock.png');
+                    $('.seleccion-us').attr('src', './img/rock.png');
                 break;
                 case (usuario == 2):
-                    $('.seleccion-us').attr('src', '../img/paper.png');
+                    $('.seleccion-us').attr('src', './img/paper.png');
                 break;
                 case (usuario == 3):
-                    $('.seleccion-us').attr('src', '../img/scissors.png');
+                    $('.seleccion-us').attr('src', './img/scissors.png');
                 break;
                 default:
-                    $('.seleccion-us').attr('src', '../img/interrogacion.svg');
+                    $('.seleccion-us').attr('src', './img/interrogacion.svg');
                 break;
             }
             switch (true) {
                 case (variable == 1):
-                    $('.seleccion-pc').attr('src', '../img/rock.png');
+                    $('.seleccion-pc').attr('src', './img/rock.png');
                 break;
                 case (variable == 2):
-                    $('.seleccion-pc').attr('src', '../img/paper.png');
+                    $('.seleccion-pc').attr('src', './img/paper.png');
                 break;
                 case (variable == 3):
-                    $('.seleccion-pc').attr('src', '../img/scissors.png');
+                    $('.seleccion-pc').attr('src', './img/scissors.png');
                 break;
                 default:
-                    $('.seleccion-pc').attr('src', '../img/interrogacion.svg');
+                    $('.seleccion-pc').attr('src', './img/interrogacion.svg');
                 break;
             }
 
