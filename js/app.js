@@ -13,7 +13,7 @@ $(document).ready(function () {
     $('.start-button').click(function() {  
 
         //$('.start-button').html('Reiniciar');
-        $('.start-button').hide();
+        $('.start-button').remove();
 
         var variable;
         var usuario;
