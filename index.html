@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <meta name="description" content="Jugar Piedra, Papel o Tijera en solitario">
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body scroll="no">
+    <header>
+        <h1>Piedra, Papel o Tijera</h1>
+    </header>
+    <main>
+        <section class="main-container">
+            <section class="users-container">
+                <h2 id="nombre-us"></h2>
+                <figure class="seleccion">
+                    <img src="./img/interrogación.svg" alt="Selección Usuario">
+                </figure>
+            </section>
+
+            <div class="versus-container">
+                <figure class="versus"></figure>
+                <span>
+                    <p class="user-score">0</p>
+                    <p> : </p>
+                    <p class="cpu-score">0</p>
+                </span>
+            </div>
+
+            <section class="users-container">
+                <h2>CPU</h2>
+                <figure class="seleccion">
+                    <img src="./img/interrogación.svg" alt="Selección CPU">
+                </figure>
+            </section>
+        </section>
+
+        <section class="button-container">
+            <button class="button-piedra">
+                
+            </button>
+
+            <button class="button-papel">
+
+            </button>
+
+            <button class="button-tijeras">
+
+            </button>
+        </section>
+
+    </main>
+
+    <div class="info-container">
+
+        <figure>
+            <img src="./img/interrogación.svg" alt="">
+        </figure>
+        <span>
+            <p>La selección de la CPU fue...</p>
+            <p class="result">Resultado</p>
+        </span>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

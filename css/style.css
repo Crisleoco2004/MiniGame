@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Kiwi Maru', serif;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 28rem;
+    height: 10rem;
+    text-align: center;
+    font-size: 1.2rem;
+    background: linear-gradient(207.8deg, #03045e 1%, #00b4d8 70%, #caf0f8 100%)
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    max-width: 90rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+    padding: 1rem;
+    font-family: 1.3;
+    background-color: #caf0f8;
+    border-radius: 2rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.users-container {
+    position: relative;
+    display: flex;
+    width: 40%;
+    max-width: 20rem; 
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+    margin-top: 6rem;
+    padding: 1rem .5rem;
+    background-color: #90e0ef;
+    border-radius: 2rem;
+}
+
+.seleccion {
+    width: 80%;
+    max-width: 15rem;
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #0096c7;
+    border-radius: 2rem;
+}
+
+.users-container h2 {
+    position: absolute;
+    top: -5rem;
+    left: -.5rem;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    color: white;
+    background-color: #03045e;
+    border-radius: 2rem;
+}
+
+.versus-container {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    max-width: 8rem;
+    height: auto;
+    margin: 1rem;
+
+}
+
+.versus {
+    align-self: center;
+    width: 80%;
+    height: 50%;
+    margin-top: 2rem;
+    background-image: url('../img/espadas.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.versus-container span {
+    display: flex;
+    padding: 0 1rem;
+    font-family: 'Kiwi Maru', serif;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: #0096c7;
+    border-radius: 2rem;
+}
+
+.versus-container span p {
+    color: white;
+    margin: 0 auto;
+}
+
+
+.button-container {
+    display: flex;
+    width: 90%;
+    height: 11rem;
+    max-width: 90rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    font-family: 1.3;
+    background-color: #90e0ef;
+    border-radius: 2rem;
+}
+
+.button-container button {
+    width: 30%;
+    height: 100%;
+    max-width: 12rem;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 2rem;
+    background-color: #47c3ec;
+    outline: none;
+    cursor: pointer;
+    border: solid .1px #8f8f8f;
+}
+
+.button-container button:hover {
+    background-color: #2dabd4;
+}
+.button-container button:active {
+    background-color: #caf0f8;
+
+}
+
+.button-piedra {
+    background-image: url(../img/rock.png);
+}
+.button-papel {
+    background-image: url(../img/paper.png);
+}
+.button-tijeras {
+    background-image: url(../img/scissors.png);
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: calc(65% - 8rem);
+    left: calc(50% - 12rem);
+    width: 24rem;
+    height: 16rem;
+    margin-top: 4rem;
+    background-color: #03055ee3;
+    border-radius: 2rem; 
+    font-size: 1.3rem;
+}
+
+.info-container figure {
+    width: 20%;
+    height: auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #90e1ef8e;
+    border-radius: 2rem;
+}
+
+.info-container span {
+    text-align: center;
+}
+
+.result {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media (min-width: 450px) {
+
+    .info-container {
+        bottom: calc(65% - 10rem);
+        left: calc(50% - 20rem);
+        width: 40rem;
+        height: 20rem;
+        font-size: 1.4rem;
+    }
+
+    .result {
+        font-size: 1.6rem;
+    }
+    
+}
+
+
+@media (min-width: 750px) {
+    .button-container {
+        height: 17rem;
+    }
+
+    main {
+        padding: 3rem;
+    }
+
+    .info-container {
+        bottom: calc(55% - 15rem);
+        left: calc(50% - 25rem);
+        width: 50rem;
+        height: 30rem;
+        font-size: 1.5rem;
+    }
+
+    .result {
+        font-size: 1.7rem;
+    }
+    
+}
