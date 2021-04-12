@@ -24,8 +24,8 @@ $(document).ready(function () {
             scoreUser = 0;
             $('.user-score').html(scoreUser);
             $('.cpu-score').html(scorePc);
-            $('.seleccion-us').attr('src', '../img/interrogación.svg');
-            $('.seleccion-pc').attr('src', '../img/interrogación.svg');
+            $('.seleccion-us').attr('src', '../img/interrogacion.svg');
+            $('.seleccion-pc').attr('src', '../img/interrogacion.svg');
         }
 
 
@@ -57,7 +57,7 @@ $(document).ready(function () {
         function animation(){
 
             resultado.show(3000);
-            resultado.hide(1);
+            resultado.hide(100);
         }
 
         function game(usuario, variable){
@@ -103,7 +103,7 @@ $(document).ready(function () {
                     $('.seleccion-us').attr('src', '../img/scissors.png');
                 break;
                 default:
-                    $('.seleccion-us').attr('src', '../img/interrogación.svg');
+                    $('.seleccion-us').attr('src', '../img/interrogacion.svg');
                 break;
             }
             switch (true) {
@@ -117,7 +117,7 @@ $(document).ready(function () {
                     $('.seleccion-pc').attr('src', '../img/scissors.png');
                 break;
                 default:
-                    $('.seleccion-pc').attr('src', '../img/interrogación.svg');
+                    $('.seleccion-pc').attr('src', '../img/interrogacion.svg');
                 break;
             }
 
